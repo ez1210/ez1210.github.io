@@ -1,6 +1,10 @@
 @font-face {
-    font-family: "SliceSerif.woff";
+    font-family: "SliceSerif";
     src: url("SliceSerif.woff") format("Woff");
     font-weight: normal;
     font-style: normal;
+}
+
+h1 {
+    font-family:SliceSerif
 }
