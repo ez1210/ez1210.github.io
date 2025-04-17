@@ -5,6 +5,12 @@
     font-style: normal;
 }
 
+body{
+    background-color: rgb(203, 203, 203);
+}
+
 h1 {
-    font-family:"custom"
+    font-family:"custom";
+    color:rgb(203, 53, 53);
+    font-size: 50px;
 }
