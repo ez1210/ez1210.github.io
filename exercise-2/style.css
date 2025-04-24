@@ -177,20 +177,19 @@
   /* Question 18 */
   .horizontal-stripes {
     display: flex;
-    flex-direction: row;
-    gap: 5px;
+    flex-direction: column;
+    gap: 10px;
 }
 
   .stripe {
-    width: 10px;
-    height: 100px;
+    width: 100px;
+    height: 10px;
     background-color: #32a852;
   }
 
   /* Question 19 */
   .stripe {
-    width: 100px;
-    height: 10px;
+    flex-direction: row;
   }
 
   /* Question 20 */
