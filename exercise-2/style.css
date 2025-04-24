@@ -175,13 +175,10 @@
   }
   
   /* Question 18 */
-  .horizontal-stripes {
+  .stripe {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-  .stripe {
+    margin-bottom: 5px;
     width: 100px;
     height: 10px;
     background-color: #32a852;
