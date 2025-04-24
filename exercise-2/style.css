@@ -87,9 +87,10 @@
   
   /* Question 12 */
   .fixed-btn{
+    position: sticky;
     display: block;
-    margin-top: 10px;
-    margin-right: 10px;
+    top: 10px;
+    right: 10px;
     background-color:pink;
     width:130px;
     padding:20px;
@@ -112,15 +113,36 @@
     width:200px;
     height:50px;
     background-color:grey;
+    position: relative;
   }
   .move-me{
     width:220px;
     height:60px;
     background-color:blue;
+    position: relative;
+    left: -30px;
+    top: -30px;
   }
   
   /* Question 15 */
-  
+  /*
+  .dont-move{
+    display: inline-block;
+    width:200px;
+    height:50px;
+    background-color:grey;
+    position: relative;
+  }
+  .move-me{
+    display: inline-block;
+    width:220px;
+    height:60px;
+    background-color:blue;
+    position: relative;
+    left: -30px;
+    top: -30px;
+  }
+ */
   /* Question 16 */
   .larger-div{
     background-color:red;
@@ -128,11 +150,13 @@
     height:260px;
   }
   .smaller-div{
+    position: relative;
     background-color:purple;
     width:200px;
     height:200px;
+    bottom: 230px;
+    left: 30px;
   }
-  
   
   /* Question 17 */
   .parent-div{
@@ -146,10 +170,29 @@
     width:50px;
     height:50px;
     position:absolute;
-    bottom:0px;
-    right:0px;
+    bottom:125px;
+    right:125px;
   }
   
+  /* Question 18 */
+  .horizontal-stripes {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+  .stripe {
+    width: 10px;
+    height: 100px;
+    background-color: #32a852;
+  }
+
+  /* Question 19 */
+  .stripe {
+    width: 100px;
+    height: 10px;
+  }
+
   /* Question 20 */
   .replicate-me{
     background-color:lightgrey;
@@ -164,19 +207,58 @@
   }
   .red-square{
     background-color:#f0002c;
+    left: 20px;
+    top: 20px;
   }
   .pink-square{
     background-color:#e0abd8;
+    left: 60px;
+    top: 90px;
   }
   .yellow-square{
     background-color:#f0c800;
+
+    left: 120px;
+    top: 120px;
   }
   .green-square{
     background-color:#32a852;
+    left: 150px;
+    top: 55px;
   }
   .blue-square{
     background-color:#0486d6;
+    left: 170px;
+    top: 90px;
   }
+
+  /*Question 22*/
+  .long-block {
+    background-color:#393f49;
+    position: relative;
+    top: 100px;
+    width: 40px;
+    height: 100px;
+  }
+
+  .head {
+    background-color: #393f49;
+    position: relative;
+    width: 20px;
+    height: 30px;
+    top: -20px;
+    left: 9.5px;
+  }
+  
+  .sharp {
+    background-color: #393f49;
+    position: relative;
+    width: 5px;
+    height: 30px;
+    top:-80px;
+    left: 17px;
+  }
+
   
   /* Default Styles */
   
@@ -197,3 +279,4 @@
   h3{
     text-decoration:underline;
   }
+
