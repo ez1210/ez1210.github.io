@@ -19,6 +19,13 @@ body {
     margin-bottom: 40px;
 }
 
+.font-name:hover {
+    color: rgb(134, 9, 9);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
 .image-container {
     position: relative;
     width: 500px;
@@ -61,7 +68,7 @@ body {
 
 section {
     max-width: 800px;
-    /*margin: 60px auto;*/
+    margin: 20px;
     padding: 20px;
 }
 
