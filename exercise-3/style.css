@@ -9,6 +9,7 @@
   /* Add Your Code for Question 1 here */
   .red-circle:hover {
     background-color: black;
+    transition: 0.2s;
   }
   
   
@@ -22,6 +23,7 @@
   /* Add Your Code for Question 2 here */
   .hover-b-r:hover {
     border-radius: 20px;
+    transition: 0.5s;
   }
   
   
@@ -34,6 +36,7 @@
   /* Add Your Code for Question 3 here */
   .hover-tr:hover{
     letter-spacing: 10px;
+    transition: 0.7s;
   }
   
   
@@ -46,28 +49,36 @@
       text-transform:uppercase;
       text-decoration: none;
       position: relative;
+      
   }
   
   /* Add Your Code for Question 4 here */
   .hover-move-up:hover {
     bottom: 5px;
+    transition: 0.9s;
+    
 }
 
   /* Questions 5 & 6 */
   #hover-move, #hover-move-2{
       position:relative;
       left:0px;
+      transition: 2s;
   }
   
   /* Add Your Code for Question 5 here */
   #hover-move:hover {
     left: 30px;
+    transition: 2s;
+    transition-timing-function: ease-in-out;
   }
   
   /* Add Your Code for Question 6 here */
   #hover-move-2:hover{
     position: absolute;
     left: calc(100vw - 100px);
+    transition: 2s;
+    transition-timing-function: ease-in-out;
   }
   
   
@@ -80,6 +91,7 @@
   .hover-blur:hover {
     width:400px;
     filter: blur(4px);
+    transition: 3s;
 }
   
   /* Question 8 */
@@ -93,6 +105,7 @@
   /* Add Your Code for Question 8 here */
   .hover-cursor:hover{
     cursor: progress;
+    transition: 3.5s;
 }
   /* Question 11 */
   .blue-circle-parent{
@@ -102,7 +115,10 @@
   }
   
   /* Add Your Code for Question 11 here */
-  
+  .blue-circle-parent > .red-square {
+    background-color:blue;
+    border-radius: 50%;
+  }
   
   /* Question 12 */
   .paragraph-parent{
@@ -110,14 +126,18 @@
   }
   
   /* Add Your Code for Question 12 here */
-  
+  .paragraph-parent > p {
+    color: red;
+    font-family: sans-serif;
+  }
   
   /* Question 13 */
-  .parent-presence div{
-    background: red;
-    margin: 5px;
+  .parent-presence > div{
+    background: rgb(48, 17, 255);
+    margin: 10px;
     width:5px;
     height: 5px;
+    border: 10px solid;
   }
   
   
@@ -139,6 +159,9 @@
   }
   
   /* Add Your Code for Question 14 here */
+  .parent-child-appear:hover > .child-appear {
+    opacity: 100;
+  }
   
   /* Add your code to question 15 here */
   
@@ -148,7 +171,9 @@
   }
   
   /* Add Your Code for Question 15 here */
-  
+  .parent-move-1:hover > .red-square {
+    left: 30px;
+  }
   
   /* Add your code to question 16 here */
   
@@ -158,7 +183,10 @@
   }
   
   /* Add Your Code for Question 16 here */
-  
+  .parent-move-1:hover > .red-square {
+    position: fixed;
+    left: calc(100vw - 100px);
+  }
   
   /* Question 17 */
   .loading-parent{
@@ -180,7 +208,9 @@
   }
   
   /* Add Your Code for Question 17 here */
-  
+  .loading-parent:hover > .loading-child {
+    width: 80%;
+  }
   
   
   /* Question 18 */
@@ -199,7 +229,9 @@
   }
   
   /* Add Your Code for Question 18 here */
-  
+  .parent-rotate:hover > div {
+    transform: rotate( 30deg );
+  }
   
   /* Question 19 */
   .parent-ta-da{
@@ -210,6 +242,7 @@
       height:10px;
   }
   .ta-da{
+    position: fixed;
       background-color:yellow;
       height:100vh;
       width:100vh;
@@ -223,7 +256,9 @@
   }
   
   /* Add Your Code for Question 19 here */
-  
+  .parent-ta-da:hover + .ta-da {
+    display: block;
+  }
   
   /* Question 20 */
   .parent-text-change{
@@ -235,7 +270,12 @@
   }
   
   /* Add Your Code for Question 20 here */
-  
+  .parent-text-change:hover > .before-hover {
+    display: none;
+  }
+  .parent-text-change:hover > .on-hover {
+    display: flex;
+  }
   
   
   /* Question 21 */
@@ -244,6 +284,9 @@
   }
   
   /* Add Your Code for Question 21 here */
+  .tonguetwister:hover > .hide-letter {
+    color: transparent;
+  }
   
   
   /* Question 22 */
@@ -260,7 +303,13 @@
   }
   
   /* Add Your Code for Question 22 here */
-  
+  .stripes:hover > .s1 {
+    background-color: black;
+  }
+
+  .stripes:hover > .s2 {
+    background-color: orange;
+  }
   
   
   
